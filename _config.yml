@@ -14,7 +14,7 @@ subtitle: "You can't connect the dots looking forward. You can only connect them
 email: cruddbdbdeep@gmail.com
 name: Hyejin Lee
 description: >
-  개미는 오늘도 열심히 일을 하네
+  개미는 오늘도 열심히 일을 하네🐜🐜
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -48,11 +48,20 @@ jekyll-archives:
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+  - cat: Data Engineering
+    desc: "Linux, Database, Hadoop, SW"
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+  - cat: Data Analysis
+    desc: "Python Library/Framework, Maching Learning, Deep Learning, Statistics"
+
+  - cat: Lecture
+    desc: "Lectures"
+
+  - cat: Review
+    desc: "Seminar, Conference, Books"
+
+  - cat: ETC
+    desc: "etc"
 
 # Social icons and sharing options
 #
