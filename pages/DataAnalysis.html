@@ -4,16 +4,14 @@ title: "Data Analysis"
 permalink: /DataAnalysis/
 ---
 
-{% for category in site.categories %}
-  {% capture cat %}{{ category | first }}{% endcapture %}
-  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
+<h2 id="{{cat}}">Statistics</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
     {% endif %}
   {% endfor %}
-  <ul class="posts-list">
-  {% for post in site.categories[cat] %}
+<ul class="posts-list">
+  {% for post in site.categories.Statistics %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -21,7 +19,42 @@ permalink: /DataAnalysis/
       <span class="post-date">- {{ post.date | date_to_long_string }}</span>
     </li>
   {% endfor %}
-  </ul>
-  {% if forloop.last == false %}<hr>{% endif %}
-{% endfor %}
+</ul>
+<hr>
+
+<h2 id="{{cat}}">Machine Learning</h2>
+  {% for desc in site.descriptions %}
+    {% if desc.cat == cat %}
+      <p class="desc"><em>{{ desc.desc }}</em></p>
+    {% endif %}
+  {% endfor %}
+<ul class="posts-list">
+  {% for post in site.categories.ML %}
+    <li>
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+    </li>
+  {% endfor %}
+</ul>
+<hr>
+
+<h2 id="{{cat}}">Deep Learning</h2>
+  {% for desc in site.descriptions %}
+    {% if desc.cat == cat %}
+      <p class="desc"><em>{{ desc.desc }}</em></p>
+    {% endif %}
+  {% endfor %}
+<ul class="posts-list">
+  {% for post in site.categories.DL %}
+    <li>
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+    </li>
+  {% endfor %}
+</ul>
+
 <br>
