@@ -24,6 +24,7 @@ cover: "/assets/post_header/conference.jpg"
 
 * 카카오 계정으로 로그인 한 뒤, 개발자 계정 등록 [(https://developers.kakao.com/)][kakao-developers]
 ![kakaodevelopers](https://user-images.githubusercontent.com/40786985/68369663-2f579f00-017e-11ea-8c75-97e551d9e44e.jpg)
+
 <br>
 
 * 앱 만들기
@@ -129,5 +130,5 @@ if __name__ == '__main__':
 
 <br>
 
-[kakao-developers]:     [https://developers.kakao.com/]
-[kakao-map]:            [https://developers.kakao.com/docs/restapi/local#%ED%96%89%EC%A0%95%EA%B5%AC%EC%97%AD%EC%A0%95%EB%B3%B4-%EB%B3%80%ED%99%98]
+[kakao-developers]:     https://developers.kakao.com/
+[kakao-map]:            https://developers.kakao.com/docs/restapi/local#%ED%96%89%EC%A0%95%EA%B5%AC%EC%97%AD%EC%A0%95%EB%B3%B4-%EB%B3%80%ED%99%98
