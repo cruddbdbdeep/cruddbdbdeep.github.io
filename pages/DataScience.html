@@ -1,17 +1,17 @@
 ---
 layout: page
-title: "Data Engineering"
-permalink: /DataEngineering/
+title: "Data Science"
+permalink: /DataScience/
 ---
 
-<h2 id="{{cat}}">Python</h2>
+<h2 id="{{cat}}">Statistics</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
     {% endif %}
   {% endfor %}
 <ul class="posts-list">
-  {% for post in site.categories.Python %}
+  {% for post in site.categories.Statistics %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -22,14 +22,14 @@ permalink: /DataEngineering/
 </ul>
 <hr>
 
-<h2 id="{{cat}}">Hadoop</h2>
+<h2 id="{{cat}}">Machine Learning</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
     {% endif %}
   {% endfor %}
 <ul class="posts-list">
-  {% for post in site.categories.Hadoop %}
+  {% for post in site.categories.ML %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -40,14 +40,14 @@ permalink: /DataEngineering/
 </ul>
 <hr>
 
-<h2 id="{{cat}}">SQL</h2>
+<h2 id="{{cat}}">Deep Learning</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
     {% endif %}
   {% endfor %}
 <ul class="posts-list">
-  {% for post in site.categories.SQL %}
+  {% for post in site.categories.DL %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

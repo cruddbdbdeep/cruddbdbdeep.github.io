@@ -1,17 +1,17 @@
 ---
 layout: page
-title: "Data Analysis"
-permalink: /DataAnalysis/
+title: "Programming"
+permalink: /Programming/
 ---
 
-<h2 id="{{cat}}">Statistics</h2>
+<h2 id="{{cat}}">Python</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
     {% endif %}
   {% endfor %}
 <ul class="posts-list">
-  {% for post in site.categories.Statistics %}
+  {% for post in site.categories.Python %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -22,14 +22,14 @@ permalink: /DataAnalysis/
 </ul>
 <hr>
 
-<h2 id="{{cat}}">Machine Learning</h2>
+<h2 id="{{cat}}">Java</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
     {% endif %}
   {% endfor %}
 <ul class="posts-list">
-  {% for post in site.categories.ML %}
+  {% for post in site.categories.Java %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -40,14 +40,14 @@ permalink: /DataAnalysis/
 </ul>
 <hr>
 
-<h2 id="{{cat}}">Deep Learning</h2>
+<h2 id="{{cat}}">C/C++</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
     {% endif %}
   {% endfor %}
 <ul class="posts-list">
-  {% for post in site.categories.DL %}
+  {% for post in site.categories.cpp %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -56,5 +56,24 @@ permalink: /DataAnalysis/
     </li>
   {% endfor %}
 </ul>
+<hr>
+
+<h2 id="{{cat}}">Algorithm</h2>
+  {% for desc in site.descriptions %}
+    {% if desc.cat == cat %}
+      <p class="desc"><em>{{ desc.desc }}</em></p>
+    {% endif %}
+  {% endfor %}
+<ul class="posts-list">
+  {% for post in site.categories.Algorithm %}
+    <li>
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+    </li>
+  {% endfor %}
+</ul>
+<hr>
 
 <br>
