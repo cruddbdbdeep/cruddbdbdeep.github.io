@@ -4,8 +4,14 @@ title: "ETC"
 permalink: /ETC/
 ---
 
+<h2 id="{{cat}}">Setup</h2>
+  {% for desc in site.descriptions %}
+    {% if desc.cat == cat %}
+      <p class="desc"><em>{{ desc.desc }}</em></p>
+    {% endif %}
+  {% endfor %}
 <ul class="posts-list">
-  {% for post in site.categories.ETC %}
+  {% for post in site.categories.Setup %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -13,3 +19,7 @@ permalink: /ETC/
       <span class="post-date">- {{ post.date | date_to_long_string }}</span>
     </li>
   {% endfor %}
+</ul>
+<hr>
+
+<br>
